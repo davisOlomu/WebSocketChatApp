@@ -40,6 +40,5 @@ namespace WebSocketChatApp.Services
                 }
             }
         }
-  
     }
 }

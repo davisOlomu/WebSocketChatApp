@@ -31,18 +31,6 @@ app.MapGet("/ws", async (context) =>
         context.Response.StatusCode = StatusCodes.Status400BadRequest;
     }
 });
-//app.Use(async (context, next) =>
-//{
-//    if (context.Request.Path == "/ws")
-//    {
-       
-//        await webSocketHandler.HandleWebSocketAsync(webSocketHandler);
-//    }
-//    else
-//    {
-//        await next();
-//    }
-//});
 
 
 // Configure the HTTP request pipeline.
