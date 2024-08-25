@@ -13,8 +13,6 @@ namespace WebSocketChatApp.Services
         {
             var connectionId = Guid.NewGuid().ToString();
             _connections.TryAdd(connectionId, webSocket);
-
-            await BroadcastMessage($"WebSocket is now connected");
             Console.WriteLine();
 
             var buffer = new byte[1024 * 4];
